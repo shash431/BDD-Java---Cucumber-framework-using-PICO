@@ -31,3 +31,12 @@ It contains the TestContext class which holds all the objects state (Sharing Tes
   - a manager class for the page Objects (PageObjectManager.java) 
   - a manager class for the web driver (WebDriverManager.java) 
   - a manager class for the properties (FileReaderManager.java) 
+4. pageObjects:
+The page Object model (https://martinfowler.com/bliki/PageObject.html ) is used and is implemented using the Selenium page object factory. 5. Providers:
+It contains a class for reading the configuration parameters.
+
+
+How to run the tests? 
+
+Navigate to the location of the project and run the following command
+mvn test -Dcucumber.options="src/test/resources/Tests/<<feature-file-name>>.feature"
